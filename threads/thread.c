@@ -263,7 +263,7 @@ thread_name (void)
 struct thread *
 thread_current (void) 
 {
-  struct thread *t = running_thread ();
+ struct thread *t = running_thread ();
   
   /* Make sure T is really a thread.
      If either of these assertions fire, then your thread may
@@ -383,7 +383,7 @@ thread_get_recent_cpu (void)
   /* Not yet implemented. */
   return 0;
 }
-
+
 /* Idle thread.  Executes when no other thread is ready to run.
 
    The idle thread is initially put on the ready list by
